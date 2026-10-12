@@ -1,0 +1,36 @@
+---
+layout: page
+title: Lịch sinh hoạt
+permalink: /lich-sinh-hoat/
+lead: Lịch cố định hằng tuần và các sự kiện sắp tới. Người mới cứ đến buổi bất kỳ, CLB có sẵn bàn cờ.
+---
+<h2>Hằng tuần</h2>
+<div class="grid">
+  {% for s in site.data.schedule %}
+  <div class="card">
+    <h3>{{ s.title }}</h3>
+    <p class="when">{{ s.when }}</p>
+    <p>{{ s.where }}</p>
+    {% if s.note and s.note != "" %}<p>{{ s.note }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Sự kiện sắp tới</h2>
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign upcoming = 0 %}
+<ul class="post-list">
+  {% assign events = site.data.events | sort: "date" %}
+  {% for e in events %}
+    {% assign d = e.date | date: "%Y-%m-%d" %}
+    {% if d >= today %}
+      {% assign upcoming = upcoming | plus: 1 %}
+      <li>
+        <span class="meta">{{ e.date | date: "%d/%m/%Y" }} · {{ e.where }}</span><br>
+        <strong>{{ e.title }}</strong>
+        {% if e.note and e.note != "" %}<p>{{ e.note }}</p>{% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% if upcoming == 0 %}<p class="meta">Chưa có sự kiện nào được lên lịch.</p>{% endif %}

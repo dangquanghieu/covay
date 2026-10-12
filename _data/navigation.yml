@@ -1,0 +1,13 @@
+# Menu trên cùng. Thêm/bớt mục tại đây.
+- title: Giới thiệu
+  url: /gioi-thieu/
+- title: Lịch sinh hoạt
+  url: /lich-sinh-hoat/
+- title: Thành viên
+  url: /thanh-vien/
+- title: Tin tức
+  url: /tin-tuc/
+- title: Học cờ
+  url: /hoc-co/
+- title: Liên hệ
+  url: /lien-he/

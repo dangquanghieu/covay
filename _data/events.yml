@@ -1,0 +1,10 @@
+# Sự kiện sắp tới — thêm/xoá theo năm. Ngày theo định dạng YYYY-MM-DD.
+# Sự kiện đã qua tự ẩn ở lần build kế tiếp.
+- date: 2026-10-25
+  title: Giải nội bộ mùa Thu
+  where: "Phòng XXX"
+  note: "Chia bảng theo trình độ, chấp quân theo chênh lệch hạng."
+- date: 2026-11-15
+  title: Giao lưu với CLB bạn
+  where: "Sẽ thông báo"
+  note: ""

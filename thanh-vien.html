@@ -1,0 +1,26 @@
+---
+layout: page
+title: Thành viên
+permalink: /thanh-vien/
+lead: Ban chủ nhiệm và thành viên CLB. Trình độ ghi theo hệ kyu/dan (tự đánh giá hoặc theo hạng trên OGS).
+---
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Họ tên</th><th>Vai trò</th><th>Trình độ</th><th>OGS</th></tr>
+  </thead>
+  <tbody>
+  {% for m in site.data.members %}
+    <tr>
+      <td>{{ m.name }}</td>
+      <td>{% if m.role and m.role != "" %}<span class="tag">{{ m.role }}</span>{% endif %}</td>
+      <td class="rank">{{ m.rank }}</td>
+      <td>{% if m.ogs and m.ogs != "" %}<a href="https://online-go.com/user/view/{{ m.ogs }}">{{ m.ogs }}</a>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>Về hệ thống hạng</h2>
+<p>Kyu (級) đếm ngược từ khoảng 30k (người mới) đến 1k; sau 1k là 1d (段, dan nghiệp dư), tăng dần đến khoảng 7d–9d tuỳ hệ thống xếp hạng. Chênh lệch một hạng tương ứng xấp xỉ một quân chấp. Hạng giữa các server (OGS, KGS, Fox) không quy đổi tương đương 1:1.</p>

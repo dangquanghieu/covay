@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <strong>{{ site.title }}</strong><br>
+      {% if site.contact.address and site.contact.address != "" %}{{ site.contact.address }}<br>{% endif %}
+      {% if site.contact.email and site.contact.email != "" %}<a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>{% endif %}
+    </div>
+    <div class="footer-links">
+      {% if site.contact.facebook and site.contact.facebook != "" %}<a href="{{ site.contact.facebook }}">Facebook</a>{% endif %}
+      {% if site.contact.zalo and site.contact.zalo != "" %}<a href="{{ site.contact.zalo }}">Zalo</a>{% endif %}
+      {% if site.contact.ogs and site.contact.ogs != "" %}<a href="{{ site.contact.ogs }}">OGS</a>{% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </div>
+  <p class="wrap copyright">© {{ site.time | date: "%Y" }} {{ site.title }} · Xây dựng bằng Jekyll &amp; GitHub Pages</p>
+</footer>

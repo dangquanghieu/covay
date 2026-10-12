@@ -1,0 +1,13 @@
+# Lịch sinh hoạt cố định — sửa trực tiếp file này.
+- title: Sinh hoạt thường kỳ
+  when: "Thứ Tư, 17:30 – 20:00"
+  where: "Phòng XXX, Nhà YYY"
+  note: "Tự do đối cục, phân tích ván cờ. Có bàn cờ & đồng hồ."
+- title: Lớp nhập môn
+  when: "Thứ Bảy, 9:00 – 11:00"
+  where: "Phòng XXX, Nhà YYY"
+  note: "Dành cho người mới: luật chơi, bắt quân, sống chết cơ bản trên bàn 9×9."
+- title: Giải online hằng tháng
+  when: "Chủ nhật cuối tháng, 20:00"
+  where: "online-go.com (OGS)"
+  note: "Swiss 4 vòng, thời gian 20′ + 3×30″ byo-yomi."

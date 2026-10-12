@@ -1,0 +1,46 @@
+---
+layout: default
+title: Trang chủ
+---
+<section class="hero">
+  <div>
+    <h1>{{ site.title }}</h1>
+    <p class="tagline">{{ site.tagline }}</p>
+    <p>{{ site.description }} Không cần biết chơi trước — chỉ cần tò mò. Chúng tôi có lớp nhập môn hằng tuần và người hướng dẫn cho từng trình độ.</p>
+    <div class="btns">
+      <a class="btn primary" href="{{ '/lien-he/' | relative_url }}">Tham gia CLB</a>
+      <a class="btn" href="{{ '/hoc-co/' | relative_url }}">Bắt đầu học cờ</a>
+    </div>
+  </div>
+  <img class="hero-board" src="{{ '/assets/img/goban.svg' | relative_url }}" alt="Bàn cờ vây 9×9 với một thế khai cuộc">
+</section>
+
+<div class="section-head">
+  <h2>Lịch sinh hoạt</h2>
+  <a href="{{ '/lich-sinh-hoat/' | relative_url }}">Xem đầy đủ →</a>
+</div>
+<div class="grid">
+  {% for s in site.data.schedule limit: 3 %}
+  <div class="card">
+    <h3>{{ s.title }}</h3>
+    <p class="when">{{ s.when }}</p>
+    <p>{{ s.where }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+{% if site.posts.size > 0 %}
+<div class="section-head">
+  <h2>Tin mới</h2>
+  <a href="{{ '/tin-tuc/' | relative_url }}">Tất cả tin →</a>
+</div>
+<ul class="post-list">
+  {% for post in site.posts limit: 3 %}
+  <li>
+    <span class="meta">{{ post.date | date: "%d/%m/%Y" }}</span><br>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncatewords: 28 }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

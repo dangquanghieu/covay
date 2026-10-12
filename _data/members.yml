@@ -1,0 +1,23 @@
+# Danh sách thành viên. rank theo hệ kyu/dan (ví dụ: 15k, 3k, 1d).
+# role: để trống nếu là thành viên thường.
+# ogs: tên tài khoản online-go.com (tuỳ chọn).
+- name: Nguyễn Văn A
+  role: Chủ nhiệm
+  rank: 2d
+  ogs: ""
+- name: Trần Thị B
+  role: Phó chủ nhiệm
+  rank: 1k
+  ogs: ""
+- name: Lê Văn C
+  role: Phụ trách lớp nhập môn
+  rank: 3k
+  ogs: ""
+- name: Phạm Thị D
+  role: ""
+  rank: 12k
+  ogs: ""
+- name: Hoàng Văn E
+  role: ""
+  rank: 20k
+  ogs: ""

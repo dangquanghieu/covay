@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" role="img" aria-label="Bàn cờ vây 9x9">
+<defs><radialGradient id="b" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#5a5a5a"/><stop offset="1" stop-color="#111"/></radialGradient>
+<radialGradient id="w" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#d8d4cc"/></radialGradient>
+<filter id="s" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="1.5" dy="2" stdDeviation="1.5" flood-opacity=".35"/></filter></defs>
+<rect width="380" height="380" rx="10" fill="#dcb26c"/>
+<line x1="30" y1="30" x2="350" y2="30" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="30" x2="30" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="70" x2="350" y2="70" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="70" y1="30" x2="70" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="110" x2="350" y2="110" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="110" y1="30" x2="110" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="150" x2="350" y2="150" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="150" y1="30" x2="150" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="190" x2="350" y2="190" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="190" y1="30" x2="190" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="230" x2="350" y2="230" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="230" y1="30" x2="230" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="270" x2="350" y2="270" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="270" y1="30" x2="270" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="310" x2="350" y2="310" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="310" y1="30" x2="310" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="30" y1="350" x2="350" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<line x1="350" y1="30" x2="350" y2="350" stroke="#3b2a14" stroke-width="1.3"/>
+<circle cx="110" cy="110" r="3.5" fill="#3b2a14"/>
+<circle cx="270" cy="110" r="3.5" fill="#3b2a14"/>
+<circle cx="190" cy="190" r="3.5" fill="#3b2a14"/>
+<circle cx="110" cy="270" r="3.5" fill="#3b2a14"/>
+<circle cx="270" cy="270" r="3.5" fill="#3b2a14"/>
+<circle cx="110" cy="110" r="18.5" fill="url(#b)" filter="url(#s)"/>
+<circle cx="270" cy="270" r="18.5" fill="url(#w)" filter="url(#s)"/>
+<circle cx="270" cy="110" r="18.5" fill="url(#b)" filter="url(#s)"/>
+<circle cx="110" cy="270" r="18.5" fill="url(#w)" filter="url(#s)"/>
+<circle cx="190" cy="190" r="18.5" fill="url(#b)" filter="url(#s)"/>
+<circle cx="230" cy="150" r="18.5" fill="url(#w)" filter="url(#s)"/>
+<circle cx="230" cy="110" r="18.5" fill="url(#b)" filter="url(#s)"/>
+<circle cx="150" cy="230" r="18.5" fill="url(#w)" filter="url(#s)"/>
+<circle cx="270" cy="150" r="18.5" fill="url(#b)" filter="url(#s)"/>
+<circle cx="190" cy="230" r="18.5" fill="url(#w)" filter="url(#s)"/>
+</svg>

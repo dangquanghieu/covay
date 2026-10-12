@@ -1,0 +1,38 @@
+# ==============================================================
+#  CẤU HÌNH CHÍNH — sửa các trường đánh dấu [SỬA] cho CLB của bạn
+# ==============================================================
+
+title: "CLB Cờ Vây"                         # [SỬA] tên CLB
+tagline: "Mỗi nước đi là một lựa chọn"      # [SỬA] khẩu hiệu
+description: "Câu lạc bộ cờ vây (Go / Baduk / Weiqi) — sinh hoạt hằng tuần, học cờ cho người mới, giải đấu nội bộ."
+
+# --- URL ---------------------------------------------------------
+# Repo tên <username>.github.io  -> baseurl: ""
+# Repo tên khác, ví dụ "covay"    -> baseurl: "/covay"
+url: "https://YOUR-USERNAME.github.io"      # [SỬA]
+baseurl: "/covay"                           # [SỬA] trùng tên repo
+
+# --- Liên hệ (để trống trường nào thì trường đó tự ẩn) ------------
+contact:
+  email: "covay.club@example.com"           # [SỬA]
+  facebook: "https://facebook.com/groups/your-group"   # [SỬA]
+  zalo: ""                                  # link nhóm Zalo nếu có
+  ogs: ""                                   # link group trên online-go.com nếu có
+  address: "Phòng XXX, Nhà YYY, Trường ZZZ, Hà Nội"    # [SỬA]
+  map_embed: ""                             # (tuỳ chọn) src iframe Google Maps
+
+# --- Jekyll ------------------------------------------------------
+lang: vi
+timezone: Asia/Ho_Chi_Minh
+permalink: /tin-tuc/:year/:month/:title/
+markdown: kramdown
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

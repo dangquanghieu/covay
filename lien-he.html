@@ -1,0 +1,28 @@
+---
+layout: page
+title: Liên hệ
+permalink: /lien-he/
+lead: Muốn tham gia, hỏi lịch, hay rủ CLB giao lưu? Liên hệ qua các kênh dưới đây.
+---
+<div class="grid">
+  {% if site.contact.address and site.contact.address != "" %}
+  <div class="card"><h3>Địa điểm</h3><p>{{ site.contact.address }}</p></div>
+  {% endif %}
+  {% if site.contact.email and site.contact.email != "" %}
+  <div class="card"><h3>Email</h3><p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p></div>
+  {% endif %}
+  {% if site.contact.facebook and site.contact.facebook != "" %}
+  <div class="card"><h3>Facebook</h3><p><a href="{{ site.contact.facebook }}">Nhóm Facebook của CLB</a></p></div>
+  {% endif %}
+  {% if site.contact.zalo and site.contact.zalo != "" %}
+  <div class="card"><h3>Zalo</h3><p><a href="{{ site.contact.zalo }}">Nhóm Zalo</a></p></div>
+  {% endif %}
+  {% if site.contact.ogs and site.contact.ogs != "" %}
+  <div class="card"><h3>OGS</h3><p><a href="{{ site.contact.ogs }}">Group trên online-go.com</a></p></div>
+  {% endif %}
+</div>
+
+{% if site.contact.map_embed and site.contact.map_embed != "" %}
+<h2>Bản đồ</h2>
+<iframe class="map" src="{{ site.contact.map_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ"></iframe>
+{% endif %}

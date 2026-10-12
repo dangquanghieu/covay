@@ -1,0 +1,19 @@
+---
+layout: page
+title: Tin tức
+permalink: /tin-tuc/
+lead: Thông báo, kết quả giải đấu và bài viết của thành viên.
+---
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="meta">{{ post.date | date: "%d/%m/%Y" }}</span><br>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="meta">Chưa có bài viết nào.</p>
+{% endif %}
