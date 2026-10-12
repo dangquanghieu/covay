@@ -9,13 +9,13 @@ description: "Câu lạc bộ cờ vây (Go / Baduk / Weiqi) — sinh hoạt h�
 # --- URL ---------------------------------------------------------
 # Repo tên <username>.github.io  -> baseurl: ""
 # Repo tên khác, ví dụ "covay"    -> baseurl: "/covay"
-url: "https://YOUR-USERNAME.github.io"      # [SỬA]
+url: "https://dangquanghieu.github.io"      # [SỬA]
 baseurl: "/covay"                           # [SỬA] trùng tên repo
 
 # --- Liên hệ (để trống trường nào thì trường đó tự ẩn) ------------
 contact:
   email: "covay.club@example.com"           # [SỬA]
-  facebook: "https://facebook.com/groups/your-group"   # [SỬA]
+  facebook: "https://www.facebook.com/groups/276107206471249"   # [SỬA]
   zalo: ""                                  # link nhóm Zalo nếu có
   ogs: ""                                   # link group trên online-go.com nếu có
   address: "Phòng XXX, Nhà YYY, Trường ZZZ, Hà Nội"    # [SỬA]
